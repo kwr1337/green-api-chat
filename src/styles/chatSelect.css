@@ -1,0 +1,31 @@
+.chat-select-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.chat-select-container h2 {
+    margin: 0 0 16px 0;
+}
+
+.chat-select-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-phone {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.btn-create-chat {
+    border: none;
+    background-color: #008069;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}

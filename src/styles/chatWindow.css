@@ -1,0 +1,83 @@
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.no-chat-selected {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.chat-header {
+    height: 60px;
+    background-color: #ededed;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-body {
+    flex: 1;
+    background-color: #e5ddd5;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 7.5px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message-bubble.me {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.message-bubble.other {
+    align-self: flex-start;
+    background-color: #ffffff;
+}
+
+.chat-footer {
+    height: 60px;
+    background-color: #ededed;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.chat-send-btn {
+    border: none;
+    outline: none;
+    background-color: #008069; /* зелёный цвет WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
