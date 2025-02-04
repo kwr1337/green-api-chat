@@ -38,7 +38,7 @@ export const sendMessageThunk = createAsyncThunk<
         try {
             const { auth, chat } = getState()
             const { idInstance, apiTokenInstance } = auth
-            const { currentChat, chatList } = chat
+            const { currentChat } = chat
             if (!currentChat) throw new Error('Нет текущего чата для отправки сообщения')
 
             const url = `https://api.green-api.com/waInstance${idInstance}/SendMessage/${apiTokenInstance}`
